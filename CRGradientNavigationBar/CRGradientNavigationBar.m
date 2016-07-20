@@ -56,12 +56,12 @@ static CGFloat const kDefaultOpacity = 0.5f;
         if ( [self respondsToSelector:@selector(setBarTintColor:)] )
         {
             // iOS 7
-            self.barTintColor = [UIColor clearColor];
+            self.barTintColor = [UIColor whiteColor];
         }
         else
         {
             // iOS 6
-            self.tintColor = [UIColor clearColor];
+            self.tintColor = [UIColor whiteColor];
             // stops the gradient on iOS 6 UINavigationBar
             [self setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
         }
